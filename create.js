@@ -23,17 +23,18 @@ async function create() {
     symbol: "NFTS",
     name: "NFT Name",
     type: "ERC721",
+    uri: "some uri address",
   });
 
   //LACK OF IMPLEMENTATION:
   //it should add a kind of settimeout because it takes time to get the token address
   //so waiting it would prevent errors from calling it before getting the contract address
-  const contractAddress = await getContractAddress(hash);
+  //const contractAddress = await getContractAddress(hash);
 
-  console.log(contractAddress);
+  console.log(hash);
 
   //it returs the contractaddress
-  return contractAddress;
+  return hash;
 }
 
 create();
@@ -49,3 +50,6 @@ async function getContractAddress(hash) {
 
   return contractAddress;
 }
+
+//documentation:
+//https://doc.cryptum.io/main/for-developers/sdk-integration-guides/nfts/nfts-on-ethereum-celo-bsc-avalanche-and-polygon
