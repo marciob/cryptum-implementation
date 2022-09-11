@@ -16,14 +16,18 @@ async function fetching(token_address) {
     derivation: { account: 0, address: 0 },
   });
 
-  const { hash } = await sdk.nft.getInfo({
+  const { hash } = await sdk.nft.getMetadata({
     protocol: "POLYGON",
     tokenAddress: token_address,
+    tokenId: "1",
   });
 
   console.log(hash);
 }
 
-fetching();
+fetching("0xe73f8e7f031cbf001f1fe62c9a3e9c230d490154");
 
-//fetching(0x8f8c3ccada16481aaa4edfe8fe2ee20ad26952be);
+//deployed examples:
+//deployed-txn-address:0xd4ca99365063e59307b02d0a47a18d86a731a9706c9c2d9258b4da07458b7583
+//contract-address:0xe73f8e7f031cbf001f1fe62c9a3e9c230d490154
+//deployer-address:0x6d956f9200722ab8e31ef9663fa61e6b3ed527dc

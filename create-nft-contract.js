@@ -53,3 +53,8 @@ async function getContractAddress(hash) {
 
 //documentation:
 //https://doc.cryptum.io/main/for-developers/sdk-integration-guides/nfts/nfts-on-ethereum-celo-bsc-avalanche-and-polygon
+
+//deployed examples:
+//deployed-txn-address:0xd4ca99365063e59307b02d0a47a18d86a731a9706c9c2d9258b4da07458b7583
+//contract-address:0xe73f8e7f031cbf001f1fe62c9a3e9c230d490154
+//deployer-address:0x6d956f9200722ab8e31ef9663fa61e6b3ed527dc
